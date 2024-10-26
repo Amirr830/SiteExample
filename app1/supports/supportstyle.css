@@ -1,0 +1,273 @@
+body {
+    font-family: "qq";
+}
+
+.container {
+    max-width: 1200px;
+    font-family: "qq";
+}
+
+.section {
+    padding: 40px 20px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.support-section {
+    background-image: url('/support.jpg');
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.support .support-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.support-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.support-option {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.support-option a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.support-option.chat {
+    background-color: #007BFF;
+}
+
+.support-option.ticket {
+    background-color: #DC3545;
+}
+
+.support-option:hover {
+    transform: scale(1.05);
+}
+
+.financial-section {
+    background-image: url('/cash.jpg');
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.financial-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.change-ip-section {
+    background-image: url('/ip.webp');
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.change-ip-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.faq-section {
+    background-image: url('/question.jpg');
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .support-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .support-option {
+        flex: 1 1 80%;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .section {
+        padding: 20px 10px;
+    }
+    .section h2 {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.account-info {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.username {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: "qq";
+    src: url("/my-next-app/public/Fonts/yekanbakh-regular.woff") format("woff");
+}
+
+.chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-button {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chat-toggle {
+    display: none;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.chat-content {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-input {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.chat-input textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.chat-toggle:checked~.chat-window {
+    display: flex;
+}
+
+@font-face {
+    font-family: "pp";
+    src: url('/fonts/yekanbakh-heavy.woff') format("woff");
+}
+
+body {
+    font-family: 'pp';
+}
+
+* {
+    font-family: 'pp';
+}

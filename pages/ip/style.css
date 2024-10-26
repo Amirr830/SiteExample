@@ -1,0 +1,56 @@
+.header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.changeip {
+    padding: 15px;
+}
+
+.changeip h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+#label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #004bd6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1e00c9;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e74c3c;
+    text-align: center;
+}

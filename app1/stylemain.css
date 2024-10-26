@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "zz";
+    src: url("/Fonts/yekanbakh-regular.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "zz";
+}
+
+div {
+    font-family: "zz";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "zz";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.services {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.service-box {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #d0d0d0;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.service-box:hover img {
+    opacity: 0.8;
+}
+
+.service-box h3,
+.service-box p {
+    margin: 15px 0;
+    color: #333;
+}
+
+.service-box h3 {
+    font-size: 1.8em;
+}
+
+.service-box p {
+    font-size: 1em;
+    color: #666;
+}
+
+.service-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.service-box:hover::before {
+    opacity: 1;
+}
+
+.counter-container {
+    text-align: center;
+}
+
+.counter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes count {
+    10% {
+        content: '10';
+    }
+    20% {
+        content: '20';
+    }
+    30% {
+        content: '30';
+    }
+    40% {
+        content: '40';
+    }
+    50% {
+        content: '50';
+    }
+    60% {
+        content: '60';
+    }
+    70% {
+        content: '70';
+    }
+    80% {
+        content: '80';
+    }
+    90% {
+        content: '90';
+    }
+    100% {
+        content: '100';
+    }
+}
+
+.count::before {
+    content: '0';
+    display: inline-block;
+    animation: counting 5s steps(5) forwards;
+}
+
+
+/* The counting keyframes animation */
+
+@keyframes counting {
+    from {
+        content: '0';
+    }
+    to {
+        content: '5';
+    }
+    from {
+        content: '5';
+    }
+    to {
+        content: '15';
+    }
+    from {
+        content: '15';
+    }
+    to {
+        content: '30';
+    }
+    from {
+        content: '30';
+    }
+    to {
+        content: '45';
+    }
+    from {
+        content: '45';
+    }
+    to {
+        content: '57';
+    }
+    from {
+        content: '57';
+    }
+    to {
+        content: '84';
+    }
+    from {
+        content: '84';
+    }
+    to {
+        content: '10';
+    }
+    from {
+        content: '5';
+    }
+    to {
+        content: '1721';
+    }
+}
+
+.services-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #2e6de2;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    /* 4 تصاویر */
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 750px;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* استایل دکمه بازگشت به بالا */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #025acc;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    /* شفافیت اولیه */
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    /* شفافیت کامل هنگام هاور */
+}
+
+.pos {
+    transform: translateY(-350px);
+}
+
+.imagee {
+    transform: translateY(-580px);
+}
+
+
+/* change image customer location  */
+
+.loca {
+    transform: translateX(90px);
+}
+
+.pp {
+    transform: translateX(-10px);
+}
+
+.aa {
+    transform: translateX(20px);
+}
+
+.bb {
+    transform: translate(15px);
+}

@@ -1,0 +1,47 @@
+.back {
+    background-image: url("../public/support.jpg");
+    background-size: cover;
+    /* تصویر کل کادر را پوشش می‌دهد */
+    background-position: center;
+    /* تصویر را در مرکز کادر قرار می‌دهد */
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+.image {
+    background-image: url("../public/cash.jpg");
+    background-size: cover;
+    /* تصویر کل کادر را پوشش می‌دهد */
+    background-position: center;
+    /* تصویر را در مرکز کادر قرار می‌دهد */
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+.imagee {
+    background-image: url("../public/ip.webp");
+    background-size: cover;
+    /* تصویر کل کادر را پوشش می‌دهد */
+    background-position: center;
+    /* تصویر را در مرکز کادر قرار می‌دهد */
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+.imageee {
+    background-image: url("../public/question.jpg");
+    background-size: cover;
+    /* تصویر کل کادر را پوشش می‌دهد */
+    background-position: center;
+    /* تصویر را در مرکز کادر قرار می‌دهد */
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 5px;
+    opacity: 80%;
+}

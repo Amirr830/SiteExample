@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "pp";
+    src: url('/fonts/yekanbakh-heavy.woff') format("woff");
+}
+
+body {
+    font-family: 'pp';
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    font-family: 'pp';
+}
+
+
+/* تنظیمات عمومی */
+
+.ticket-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    transform: translateX(-350px);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* تنظیمات واکنش‌گرا */
+
+@media (max-width: 768px) {
+    .ticket-container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 13px;
+    }
+    button.submit-btn {
+        font-size: 14px;
+    }
+}

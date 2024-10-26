@@ -1,0 +1,44 @@
+/* @font-face {
+    font-family: "testt";
+    src: url("/fonts/yekanbakh-heavy.woff") format("woff");
+}
+
+* {
+    font-family: "testt";
+    color: "white";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    font-family: "testt";
+    color: "white";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: "white";
+    font-family: "testt";
+    overflow: "hidden";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 30000;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */

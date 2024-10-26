@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "pp";
+    src: url('/fonts/yekanbakh-heavy.woff') format("woff");
+}
+
+.ticketformcontainer {
+    font-family: "pp";
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+}
+
+.ticketformcontainer h1 {
+    font-family: "pp";
+    text-align: center;
+    color: #333;
+}
+
+.ticketform {
+    display: flex;
+    font-family: "pp";
+    flex-direction: column;
+}
+
+.ticketform label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.ticketform input[type="text"],
+.ticketform select,
+.ticketform textarea,
+.ticketform input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.ticketform input[type="text"]:focus,
+.ticketform select:focus,
+.ticketform textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.ticketform button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticketform button:hover {
+    background-color: #0056b3;
+}
+
+
+/* رسپانسیو */
+
+@media (max-width: 768px) {
+    .ticketform-container {
+        padding: 15px;
+    }
+    .ticketform button {
+        font-size: 14px;
+    }
+}
+
+.ww {
+    font-family: "pp";
+}

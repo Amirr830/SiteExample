@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "pp";
+    src: url('/fonts/yekanbakh-heavy.woff') format("woff");
+}
+
+body {
+    font-family: 'pp';
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    font-family: 'pp';
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+.form-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.alt-option {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alt-option a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.alt-option a:hover {
+    text-decoration: underline;
+}
+
+
+/* رسپانسیو */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
